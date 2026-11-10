@@ -1,0 +1,33 @@
+name: build
+on: [pull_request, push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+      - name: validate gradle wrapper
+        uses: gradle/actions/wrapper-validation@v6
+      - name: setup jdk 25
+        uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'microsoft'
+      - name: make gradle wrapper executable
+        run: chmod +x ./gradlew
+      - name: validate god data
+        run: python3 tools/validate_gods.py
+      - name: core logic self-check
+        run: bash tools/run_core_selfcheck.sh
+      - name: build
+        run: ./gradlew build --no-daemon
+      - name: upload runtime jar
+        uses: actions/upload-artifact@v7
+        with:
+          name: lapergods-runtime-jar
+          # Hanya JAR runtime; sources jar tidak diunggah.
+          path: |
+            build/libs/*.jar
+            !build/libs/*-sources.jar
+          if-no-files-found: error
