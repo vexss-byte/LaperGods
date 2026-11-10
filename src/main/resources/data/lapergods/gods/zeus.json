@@ -1,0 +1,82 @@
+{
+	"id": "zeus",
+	"display_name": "Zeus",
+	"title": "Raja Petir",
+	"weapon_name": "Celestial Thunder Spear",
+	"primary_color": "#2E7BFF",
+	"secondary_color": "#FFD54A",
+	"balance_status": "untuned",
+	"buffs": [
+		{
+			"attribute": "attack_speed",
+			"amount": 0.1,
+			"operation": "MULTIPLY_BASE",
+			"condition": "always"
+		}
+	],
+	"debuffs": [
+		{
+			"attribute": "armor",
+			"amount": -2.0,
+			"operation": "ADD",
+			"condition": "always"
+		}
+	],
+	"skills": [
+		{
+			"id": "thunder_pierce",
+			"name": "Thunder Pierce",
+			"windup_ticks": 6,
+			"cooldown_ticks": 100,
+			"damage": 6,
+			"range": 18
+		},
+		{
+			"id": "storm_dash",
+			"name": "Storm Dash",
+			"windup_ticks": 3,
+			"cooldown_ticks": 140,
+			"damage": 3,
+			"range": 8
+		},
+		{
+			"id": "chain_judgment",
+			"name": "Chain Judgment",
+			"windup_ticks": 10,
+			"cooldown_ticks": 200,
+			"damage": 8,
+			"range": 12
+		},
+		{
+			"id": "skybreaker",
+			"name": "Skybreaker",
+			"windup_ticks": 16,
+			"cooldown_ticks": 300,
+			"damage": 12,
+			"range": 16
+		},
+		{
+			"id": "lightning_cage",
+			"name": "Lightning Cage",
+			"windup_ticks": 12,
+			"cooldown_ticks": 260,
+			"damage": 5,
+			"range": 8
+		},
+		{
+			"id": "tempest_recall",
+			"name": "Tempest Recall",
+			"windup_ticks": 8,
+			"cooldown_ticks": 220,
+			"damage": 0,
+			"range": 20
+		}
+	],
+	"ultimate": {
+		"id": "judgment_of_olympus",
+		"name": "Judgment of Olympus",
+		"duration_ticks": 200,
+		"cooldown_ticks": 3600,
+		"damage": 40
+	}
+}

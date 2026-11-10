@@ -1,0 +1,82 @@
+{
+	"id": "hades",
+	"display_name": "Hades",
+	"title": "Raja Dunia Bawah",
+	"weapon_name": "Soul Reaper Scythe",
+	"primary_color": "#5B1A8C",
+	"secondary_color": "#B0287A",
+	"balance_status": "untuned",
+	"buffs": [
+		{
+			"attribute": "life_steal",
+			"amount": 0.08,
+			"operation": "ADD",
+			"condition": "always"
+		}
+	],
+	"debuffs": [
+		{
+			"attribute": "damage_taken",
+			"amount": 0.2,
+			"operation": "MULTIPLY_BASE",
+			"condition": "daytime"
+		}
+	],
+	"skills": [
+		{
+			"id": "soul_rend",
+			"name": "Soul Rend",
+			"windup_ticks": 8,
+			"cooldown_ticks": 100,
+			"damage": 7,
+			"range": 6
+		},
+		{
+			"id": "nether_step",
+			"name": "Nether Step",
+			"windup_ticks": 3,
+			"cooldown_ticks": 150,
+			"damage": 3,
+			"range": 10
+		},
+		{
+			"id": "wraith_chains",
+			"name": "Wraith Chains",
+			"windup_ticks": 10,
+			"cooldown_ticks": 200,
+			"damage": 4,
+			"range": 12
+		},
+		{
+			"id": "grave_eruption",
+			"name": "Grave Eruption",
+			"windup_ticks": 14,
+			"cooldown_ticks": 260,
+			"damage": 10,
+			"range": 10
+		},
+		{
+			"id": "soul_harvest",
+			"name": "Soul Harvest",
+			"windup_ticks": 12,
+			"cooldown_ticks": 240,
+			"damage": 8,
+			"range": 8
+		},
+		{
+			"id": "abyssal_pull",
+			"name": "Abyssal Pull",
+			"windup_ticks": 10,
+			"cooldown_ticks": 220,
+			"damage": 5,
+			"range": 14
+		}
+	],
+	"ultimate": {
+		"id": "eternal_underworld",
+		"name": "Eternal Underworld",
+		"duration_ticks": 200,
+		"cooldown_ticks": 3600,
+		"damage": 40
+	}
+}

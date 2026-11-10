@@ -1,0 +1,88 @@
+{
+	"id": "thor",
+	"display_name": "Thor",
+	"title": "Dewa Petir dan Palu",
+	"weapon_name": "Mjölnir",
+	"primary_color": "#8FD3FF",
+	"secondary_color": "#FFFFFF",
+	"balance_status": "untuned",
+	"buffs": [
+		{
+			"attribute": "attack_damage",
+			"amount": 0.15,
+			"operation": "MULTIPLY_BASE",
+			"condition": "always"
+		},
+		{
+			"attribute": "knockback_resistance",
+			"amount": 0.3,
+			"operation": "ADD",
+			"condition": "always"
+		}
+	],
+	"debuffs": [
+		{
+			"attribute": "movement_speed",
+			"amount": -0.1,
+			"operation": "MULTIPLY_BASE",
+			"condition": "always"
+		}
+	],
+	"skills": [
+		{
+			"id": "mjolnir_slam",
+			"name": "Mjölnir Slam",
+			"windup_ticks": 14,
+			"cooldown_ticks": 160,
+			"damage": 12,
+			"range": 5
+		},
+		{
+			"id": "storm_dash",
+			"name": "Storm Dash",
+			"windup_ticks": 3,
+			"cooldown_ticks": 140,
+			"damage": 3,
+			"range": 8
+		},
+		{
+			"id": "hammer_recall",
+			"name": "Hammer Recall",
+			"windup_ticks": 8,
+			"cooldown_ticks": 180,
+			"damage": 5,
+			"range": 20
+		},
+		{
+			"id": "thunder_cage",
+			"name": "Thunder Cage",
+			"windup_ticks": 12,
+			"cooldown_ticks": 260,
+			"damage": 6,
+			"range": 8
+		},
+		{
+			"id": "skyfall_hammer",
+			"name": "Skyfall Hammer",
+			"windup_ticks": 18,
+			"cooldown_ticks": 320,
+			"damage": 14,
+			"range": 14
+		},
+		{
+			"id": "storm_guard",
+			"name": "Storm Guard",
+			"windup_ticks": 4,
+			"cooldown_ticks": 300,
+			"damage": 0,
+			"range": 4
+		}
+	],
+	"ultimate": {
+		"id": "ragnarok_thunderfall",
+		"name": "Ragnarok Thunderfall",
+		"duration_ticks": 200,
+		"cooldown_ticks": 3600,
+		"damage": 40
+	}
+}

@@ -1,0 +1,82 @@
+{
+	"id": "anubis",
+	"display_name": "Anubis",
+	"title": "Penjaga Kematian",
+	"weapon_name": "Judgment Staff",
+	"primary_color": "#1A1A1A",
+	"secondary_color": "#B8860B",
+	"balance_status": "untuned",
+	"buffs": [
+		{
+			"attribute": "damage_to_marked",
+			"amount": 0.25,
+			"operation": "MULTIPLY_BASE",
+			"condition": "always"
+		}
+	],
+	"debuffs": [
+		{
+			"attribute": "movement_speed",
+			"amount": -0.05,
+			"operation": "MULTIPLY_BASE",
+			"condition": "always"
+		}
+	],
+	"skills": [
+		{
+			"id": "soul_verdict",
+			"name": "Soul Verdict",
+			"windup_ticks": 8,
+			"cooldown_ticks": 120,
+			"damage": 7,
+			"range": 12
+		},
+		{
+			"id": "jackal_step",
+			"name": "Jackal Step",
+			"windup_ticks": 3,
+			"cooldown_ticks": 150,
+			"damage": 3,
+			"range": 10
+		},
+		{
+			"id": "ankh_bind",
+			"name": "Ankh Bind",
+			"windup_ticks": 10,
+			"cooldown_ticks": 200,
+			"damage": 4,
+			"range": 10
+		},
+		{
+			"id": "weighing_curse",
+			"name": "Weighing Curse",
+			"windup_ticks": 12,
+			"cooldown_ticks": 240,
+			"damage": 5,
+			"range": 12
+		},
+		{
+			"id": "sand_burial",
+			"name": "Sand Burial",
+			"windup_ticks": 14,
+			"cooldown_ticks": 280,
+			"damage": 9,
+			"range": 8
+		},
+		{
+			"id": "spirit_sentinel",
+			"name": "Spirit Sentinel",
+			"windup_ticks": 10,
+			"cooldown_ticks": 260,
+			"damage": 6,
+			"range": 12
+		}
+	],
+	"ultimate": {
+		"id": "scales_of_the_dead",
+		"name": "Scales of the Dead",
+		"duration_ticks": 200,
+		"cooldown_ticks": 3600,
+		"damage": 40
+	}
+}

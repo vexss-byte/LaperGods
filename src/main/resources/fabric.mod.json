@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "lapergods",
+	"version": "${version}",
+	"name": "LaperGods",
+	"description": "Contract. Fight. Become a God. Mod aksi-combat mitologi dengan kontrak dewa, senjata ilahi, Battle Mode, skill, dan ultimate sinematik.",
+	"authors": [
+		"Kong"
+	],
+	"license": "All-Rights-Reserved",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.lapergods.LaperGods"
+		],
+		"client": [
+			"dev.lapergods.client.LaperGodsClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

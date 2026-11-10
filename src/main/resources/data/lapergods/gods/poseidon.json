@@ -1,0 +1,82 @@
+{
+	"id": "poseidon",
+	"display_name": "Poseidon",
+	"title": "Penguasa Samudra",
+	"weapon_name": "Abyssal Trident",
+	"primary_color": "#1E90C8",
+	"secondary_color": "#40E0D0",
+	"balance_status": "untuned",
+	"buffs": [
+		{
+			"attribute": "water_speed",
+			"amount": 0.3,
+			"operation": "MULTIPLY_BASE",
+			"condition": "in_water"
+		}
+	],
+	"debuffs": [
+		{
+			"attribute": "fire_damage_taken",
+			"amount": 0.25,
+			"operation": "MULTIPLY_BASE",
+			"condition": "always"
+		}
+	],
+	"skills": [
+		{
+			"id": "tidal_spear",
+			"name": "Tidal Spear",
+			"windup_ticks": 6,
+			"cooldown_ticks": 100,
+			"damage": 6,
+			"range": 18
+		},
+		{
+			"id": "undertow",
+			"name": "Undertow",
+			"windup_ticks": 10,
+			"cooldown_ticks": 180,
+			"damage": 4,
+			"range": 10
+		},
+		{
+			"id": "aqua_dash",
+			"name": "Aqua Dash",
+			"windup_ticks": 3,
+			"cooldown_ticks": 140,
+			"damage": 3,
+			"range": 8
+		},
+		{
+			"id": "trident_surge",
+			"name": "Trident Surge",
+			"windup_ticks": 12,
+			"cooldown_ticks": 220,
+			"damage": 9,
+			"range": 12
+		},
+		{
+			"id": "whirlpool_prison",
+			"name": "Whirlpool Prison",
+			"windup_ticks": 14,
+			"cooldown_ticks": 280,
+			"damage": 5,
+			"range": 8
+		},
+		{
+			"id": "leviathan_call",
+			"name": "Leviathan Call",
+			"windup_ticks": 18,
+			"cooldown_ticks": 340,
+			"damage": 14,
+			"range": 16
+		}
+	],
+	"ultimate": {
+		"id": "leviathans_wrath",
+		"name": "Leviathan's Wrath",
+		"duration_ticks": 200,
+		"cooldown_ticks": 3600,
+		"damage": 40
+	}
+}

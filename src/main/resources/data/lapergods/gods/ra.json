@@ -1,0 +1,82 @@
+{
+	"id": "ra",
+	"display_name": "Ra",
+	"title": "Dewa Matahari",
+	"weapon_name": "Solar Khopesh",
+	"primary_color": "#FFB300",
+	"secondary_color": "#FFF3C4",
+	"balance_status": "untuned",
+	"buffs": [
+		{
+			"attribute": "attack_damage",
+			"amount": 0.2,
+			"operation": "MULTIPLY_BASE",
+			"condition": "daytime"
+		}
+	],
+	"debuffs": [
+		{
+			"attribute": "attack_damage",
+			"amount": -0.15,
+			"operation": "MULTIPLY_BASE",
+			"condition": "night"
+		}
+	],
+	"skills": [
+		{
+			"id": "solar_arc",
+			"name": "Solar Arc",
+			"windup_ticks": 6,
+			"cooldown_ticks": 100,
+			"damage": 6,
+			"range": 8
+		},
+		{
+			"id": "dawn_dash",
+			"name": "Dawn Dash",
+			"windup_ticks": 3,
+			"cooldown_ticks": 140,
+			"damage": 3,
+			"range": 8
+		},
+		{
+			"id": "sunbrand",
+			"name": "Sunbrand",
+			"windup_ticks": 8,
+			"cooldown_ticks": 180,
+			"damage": 5,
+			"range": 10
+		},
+		{
+			"id": "radiant_pillar",
+			"name": "Radiant Pillar",
+			"windup_ticks": 16,
+			"cooldown_ticks": 300,
+			"damage": 12,
+			"range": 14
+		},
+		{
+			"id": "solar_flare",
+			"name": "Solar Flare",
+			"windup_ticks": 12,
+			"cooldown_ticks": 240,
+			"damage": 9,
+			"range": 10
+		},
+		{
+			"id": "daybreak_guard",
+			"name": "Daybreak Guard",
+			"windup_ticks": 4,
+			"cooldown_ticks": 300,
+			"damage": 0,
+			"range": 4
+		}
+	],
+	"ultimate": {
+		"id": "supreme_solar_eclipse",
+		"name": "Supreme Solar Eclipse",
+		"duration_ticks": 200,
+		"cooldown_ticks": 3600,
+		"damage": 40
+	}
+}
